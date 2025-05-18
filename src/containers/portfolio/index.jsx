@@ -1,43 +1,49 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import ImageOne from "../../images/image1.jpg";
-import ImageTwo from "../../images/image2.jpg";
-import ImageThree from "../../images/image3.jpg";
-import ImageFour from "../../images/image4.jpg";
-import ImageFive from "../../images/image5.jpg";
+import ImageOne from "../../images/ecommerce.webp";
+import ImageTwo from "../../images/food.jpg";
+import ImageThree from "../../images/makeover.webp";
+import ImageFour from "../../images/movie.png";
+import ImageFive from "../../images/pet.webp";
+
+// import ImageOne from "../../images/image1.jpg";
+// import ImageTwo from "../../images/image2.jpg";
+// import ImageThree from "../../images/image3.jpg";
+// import ImageFour from "../../images/image4.jpg";
+// import ImageFive from "../../images/image5.jpg";
 import "./styles.css";
 import { useState } from "react";
 
 const portfolioData = [
   {
-    id: 2,
+    id: 3,
     name: "Ecommerce",
     image: ImageOne,
     link: "",
   },
   {
-    id: 3,
-    name: "Notes App",
+    id: 5,
+    name: "Food Restaurant",
     link: "",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "Supplier Design",
+    name: "Makeover Artist",
     image: ImageThree,
     link: "",
   },
   {
-    id: 2,
-    name: "Todo App",
+    id: 1,
+    name: "Movie Ticket Booking",
     image: ImageFour,
 
     link: "",
   },
   {
-    id: 3,
-    name: "Shopping cart design",
+    id: 4,
+    name: "Pet Adoption",
     image: ImageFive,
     link: "",
   },
@@ -50,11 +56,19 @@ const filterData = [
   },
   {
     filterId: 2,
-    label: "Developement",
+    label: "Makeover",
   },
   {
     filterId: 3,
-    label: "Design",
+    label: "Ecommerce",
+  },
+  {
+    filterId: 4,
+    label: "Pet",
+  },
+  {
+    filterId: 5,
+    label: "Food",
   },
 ];
 
