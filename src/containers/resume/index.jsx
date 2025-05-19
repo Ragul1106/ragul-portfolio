@@ -1,10 +1,7 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement, } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css'
 import { data } from "./utils";
 import './styles.css';
@@ -33,7 +30,7 @@ const Resume = () => {
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                date={item.date}
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
@@ -71,7 +68,7 @@ const Resume = () => {
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                date={item.date}
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
