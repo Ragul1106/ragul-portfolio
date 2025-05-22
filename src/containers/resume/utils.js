@@ -14,7 +14,7 @@ export const data = {
     },
     {
       title: "Python FullStack Trainee",
-      subTitle: "VTS, Tenkasi",
+      subTitle: "Vetri Technology Solutions, Tenkasi",
       description: "Learning full-stack development with Python; involved in project management and team collaboration.",
       date: "Feb 2025 - Present"
     }
