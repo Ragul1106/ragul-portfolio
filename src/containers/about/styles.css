@@ -14,6 +14,30 @@ html {
   width: 100%;
 }
 
+.about__content__personalWrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about__content__personalWrapper li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.about__content__personalWrapper .title {
+  font-weight: bold;
+  width: 130px; 
+  display: inline-block;
+}
+
+.about__content__personalWrapper .value {
+  color: #555;
+}
+
+
 .about__content__personalWrapper,
 .about__content__servicesWrapper {
   width: 50%;
