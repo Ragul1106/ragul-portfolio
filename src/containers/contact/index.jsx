@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <PageHeaderContent
-        headerText="My Contact"
+        headerText="Contact Me"
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className="contact__content">

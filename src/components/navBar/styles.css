@@ -5,7 +5,12 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* You can change font here */
 }
 
 .navbar__container {
@@ -13,45 +18,58 @@
   align-items: center;
   width: 100%;
   height: inherit;
-  padding: 0px 20px;
+  padding: 0 20px;
   flex: 1;
 }
 
 .navbar__container__logo {
   color: var(--yellow-theme-main-color);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navbar__container__menu {
   display: flex;
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar__container__menu__item {
   line-height: 40px;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-}
-
-.navbar__container__menu__item::after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 0;
-  background: transparent;
-  transition: all 0.5s ease;
-}
-
-.navbar__container__menu__item:hover::after {
-  width: 100%;
-  background: var(--yellow-theme-main-color);
+  position: relative;
 }
 
 .navbar__container__menu__item__links {
   color: var(--yellow-theme-main-color);
   text-decoration: none;
   padding: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__container__menu__item__links::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: var(--yellow-theme-main-color);
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar__container__menu__item__links:hover::after,
+.navbar__container__menu__item__links.active::after {
+  width: 100%;
+}
+
+.navbar__container__menu__item__links.active {
+  font-weight: bold;
 }
 
 .nav-icon {
@@ -66,21 +84,19 @@
     width: 100%;
     position: absolute;
     top: 80px;
-    left: -110%;
-    opacity: 1;
+    left: -100%;
+    background: #181818;
     transition: all 0.5s ease;
   }
 
   .navbar__container__menu.active {
-    background: #181818;
-    left: 0px;
-    opacity: 1;
+    left: 0;
   }
 
   .navbar__container__menu__item {
     border-bottom: 1px solid #282828;
-    margin: 0px;
-    padding: 20px 0px;
+    margin: 0;
+    padding: 20px 0;
   }
 
   .nav-icon {
