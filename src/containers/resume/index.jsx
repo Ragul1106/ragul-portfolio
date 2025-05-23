@@ -13,7 +13,7 @@ import { data } from "./utils";
 const Resume = () => {
   return (
     <section id="resume" className="resume">
-      <PageHeaderContent headerText="My Resume" icon={<BsInfoCircleFill size={40} />} />
+      <PageHeaderContent headerText="Resume" icon={<BsInfoCircleFill size={40} />} />
 
       <div className="timeline">
         <div className="timeline__experience">

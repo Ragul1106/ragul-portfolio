@@ -96,15 +96,15 @@
   }
 
   .home__text-wrapper {
-    padding: 0 1rem; /* Add padding to avoid text clipping */
+    padding: 0 1rem; 
   }
 
   .home__text-wrapper h1 {
     font-size: 2.5rem;
     line-height: 3.5rem;
-    white-space: normal; /* Allow wrapping on small screens */
-    overflow: visible;   /* Prevent hiding content */
-    animation: none;     /* Optional: Disable typing effect on small screens for clarity */
+    white-space: normal; 
+    overflow: visible;   
+    animation: none;    
   }
 
   .home__image-wrapper {
@@ -114,7 +114,7 @@
 
   .home__image {
     max-width: 200px;
-    margin: 0 auto; /* Center image */
+    margin: 0 auto; 
   }
 
   .home__social-icons {
