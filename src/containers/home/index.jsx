@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { SiIndeed } from "react-icons/si";
 import profileImage from "../../assets/Ragul.png";
 import "./styles.css";
 
@@ -42,11 +43,11 @@ const Home = () => {
               <FaGithub />
             </a>
             <a
-              href="https://instagram.com/ragul"
+              href="https://profile.indeed.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram />
+              <SiIndeed />
             </a>
           </div>
 
