@@ -9,7 +9,7 @@ const personalDetails = [
   { label: "Age", value: "26" },
   { label: "Address", value: "Sirkazhi" },
   { label: "Email", value: "ragul11699@gmail.com" },
-  { label: "Contact No", value: "+91 9629496400" },
+  { label: "Contact", value: "9629496400" },
 ];
 
 const jobSummary =
