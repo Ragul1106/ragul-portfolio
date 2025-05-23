@@ -90,17 +90,31 @@
 @media screen and (max-width: 768px) {
   .home__content-wrapper {
     flex-direction: column;
-    padding: 0 2rem;
+    padding: 0 1.5rem; /* Reduced padding for better spacing */
     text-align: center;
+    align-items: center; /* Ensures content is centered */
+  }
+
+  .home__text-wrapper {
+    padding: 0 1rem; /* Add padding to avoid text clipping */
   }
 
   .home__text-wrapper h1 {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    white-space: normal; /* Allow wrapping on small screens */
+    overflow: visible;   /* Prevent hiding content */
+    animation: none;     /* Optional: Disable typing effect on small screens for clarity */
+  }
+
+  .home__image-wrapper {
+    justify-content: center;
+    width: 100%;
   }
 
   .home__image {
-    max-width: 180px;
+    max-width: 200px;
+    margin: 0 auto; /* Center image */
   }
 
   .home__social-icons {
