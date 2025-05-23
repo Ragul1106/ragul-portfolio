@@ -24,21 +24,20 @@ const portfolioData = [
   },
   {
     id: 5,
-    name: "Food Restaurant",
+    name: "Restaurant",
     link: "",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "Makeover Artist",
+    name: "Makeover",
     image: ImageThree,
     link: "",
   },
   {
     id: 1,
-    name: "Movie Ticket Booking",
+    name: "Movie Booking",
     image: ImageFour,
-
     link: "",
   },
   {

@@ -1,5 +1,6 @@
 .resume {
   padding: 20px;
+  
 }
 
 .timeline {
@@ -55,8 +56,11 @@
     flex-direction: column;
   }
 
-  .timeline__experience,
-  .timeline__education {
-    width: 100%;
-  }
+ .timeline__experience,
+.timeline__education {
+  flex: 1 1 100%;
+  min-width: 300px;
+  transform: translateX(-20px); 
+}
+
 }
